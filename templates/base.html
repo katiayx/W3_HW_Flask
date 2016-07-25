@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}Title{% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  {% block content %}Content{% endblock %}
+  <p>
+    <h1>{% block head %}Header{% endblock %}</h1>
+  </p>
+  <div>
+    {% block content %}Body Content{% endblock %}
+  </div>
+  <form>
+    {% block form %}Form goes here{% endblock %}
+  </form>
+</body>
+</html>

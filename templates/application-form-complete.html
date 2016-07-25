@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %)
+    <title>Skills-HTML-CSS</title>
+{% endblock %}
+
+<body>
+
+{% block head %}
+	<p>
+		<h1>Job Application Page</h1>
+	</p>
+{% endblock %}
+
+{% block content %}
+	<div>
+		<summary>
+			<b id="instructions" class="summary">First step towards your dream job! Now tell us a little about yourself and what you are looking for.</b>
+		</summary>
+	</div><br>
+{% endblock %}
+
+{% block form %}
+	<form action="/application">
+		<label><id="firstname" class="name">First Name: <input type="text" name="firstname"></input></id="firstname"></label></form></label><br>
+		<label><b id="lastname" class="name">Last Name: <input type="text" name="lastname"></input></b></label>
+		<p>
+			<label>What's your salary requirement? <input type="number" name="salary"></input></label>
+		</p>
+		<p>
+			Which job are you applying for?
+			<select name="jobs">
+				<label><option value="software engineer">Software Engineer</option></label>
+				<label><option value="QA engineer">QA Engineer</option></label>
+				<label><option value="Product Manager">Product Manager</option></label>
+			</select>
+		</p>
+		<p>
+			<label><input type="submit"></input></label>
+		</p>
+	</form>
+{% endblock %}
+
+</body>
+</html>

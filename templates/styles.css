@@ -1,0 +1,16 @@
+input {
+	background-color: yellow;
+}
+
+#lastname {
+	font-weight: bold;
+}
+
+summary {
+	border-width: 3px; 
+	border-color: lightblue;
+	border-style: solid;
+	display: inline
+}
+
+
